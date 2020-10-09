@@ -4,46 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".presentation.main.MainActivity">
 
     <Button
-        android:id="@+id/btSelectExposed"
+        android:id="@+id/btProductList"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Select Exposed"
-        app:layout_constraintBottom_toTopOf="@+id/btInsertExposed"
+        android:text="Product list"
+        app:layout_constraintBottom_toTopOf="@+id/btInsertProduct"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btInsertExposed"
+        android:id="@+id/btInsertProduct"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Insert Exposed"
-        app:layout_constraintBottom_toTopOf="@+id/btSelectSql"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btSelectExposed" />
-
-    <Button
-        android:id="@+id/btSelectSql"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Select Sql"
-        app:layout_constraintBottom_toTopOf="@+id/btInsertSql"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btInsertExposed" />
-
-    <Button
-        android:id="@+id/btInsertSql"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Insert Sql"
+        android:text="Insert product"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btSelectSql" />
+        app:layout_constraintTop_toBottomOf="@+id/btProductList" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
